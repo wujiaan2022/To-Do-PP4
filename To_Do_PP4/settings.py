@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['To_Do_PP4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['to-do-pp4.herokuapp.com', 'localhost']
 
 
 # Application definition
