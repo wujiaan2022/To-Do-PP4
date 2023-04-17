@@ -4,11 +4,11 @@
     <tr>
         <th>Item</th>
     </tr>
-    {% for task in object_list %}
+    {% for task in tasks %}
     <tr>
         <td>{{task.title}}</td>
     </tr>
     {% empty %}
         <h3>No items in list</h3>
-    {% end for %}
+    {% endfor %}
 </table>
