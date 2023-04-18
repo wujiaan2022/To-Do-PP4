@@ -5,10 +5,13 @@
     <a href="{% url 'tasks' %}">&#8592; Back</a>
 </div>
 
-<form action="" method="POST">
-    {%csrf_token%}
-    {{form.as_p}}
-    <input type="submit" value="Submit">
-</form>
+<div class="card-body">
+    <form action="" method="POST">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input class="button" type="submit" value="Submit">
+    </form>
+</div>
+
 
 {% endblock content %}
