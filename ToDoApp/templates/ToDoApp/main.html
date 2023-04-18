@@ -19,5 +19,31 @@
         {% block content %}
         {% endblock content %}
     </div>
+    <script>
+        var i = 0;
+        var images = [];
+        var slideTime = 3000; // 3 seconds
+
+        images[0] = 'https://res.cloudinary.com/drzvd9vpn/image/upload/v1681852649/image_1_c5mwkn.jpg';
+        images[1] = 'https://res.cloudinary.com/drzvd9vpn/image/upload/v1681852649/image_5_xcqct2.png';
+        images[2] = 'https://res.cloudinary.com/drzvd9vpn/image/upload/v1681852649/image_4_qbqvyr.jpg';
+        images[3] = 'https://res.cloudinary.com/drzvd9vpn/image/upload/v1681852648/image_2_gzt2po.jpg';
+        images[4] = 'https://res.cloudinary.com/drzvd9vpn/image/upload/v1681852650/image_3_uqzvxf.jpg';
+        images[5] = 'https://res.cloudinary.com/drzvd9vpn/image/upload/v1681505453/cld-sample-4.jpg';
+        images[5] = 'https://res.cloudinary.com/drzvd9vpn/image/upload/v1681505453/cld-sample-3.jpg';
+
+        function changePicture() {
+            document.body.style.backgroundImage = "url(" + images[i] + ")";
+
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout(changePicture, slideTime);
+        }
+
+        window.onload = changePicture;
+    </script>
 </body>
 </html>
