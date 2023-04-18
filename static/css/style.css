@@ -115,29 +115,3 @@ label {
     padding: 20px;
 }
 
-@keyframes change{
-    0%
-    {
-        background-image: url('./img/image 1.jpg')
-    }
-    20%
-    {
-        background-image: url('./img/image 2.jpg');
-    }
-    40%
-    {
-        background-image: url('./img/image 3.jpg');
-    }
-    60%
-    {
-        background-image: url('./img/image 4.jpg');
-    }
-    80%
-    {
-        background-image: url('./img/image 5.jpg');
-    }
-    100%
-    {
-        background-image: url('./img/image 1.jpg');
-    }
-}
